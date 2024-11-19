@@ -1,12 +1,18 @@
 let messages = [];
+const message_limit = 25;
 
 function send(){
     let text = document.getElementById("textarea").value;
     console.log(text);
     // document.getElementById("tdisplay").innerHTML = text;
 
-    messages.push(text)
-    display_messages()
+    if (messages.length >= message_limit) {
+        messages.shift();
+    }
+    
+    messages.push(text);
+
+    display_messages();
 
 
     document.getElementById("textarea").value = "";
