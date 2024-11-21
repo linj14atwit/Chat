@@ -2,17 +2,16 @@ textarea {
     resize: none;
 }
 
+.message {
+    background-color: limegreen;
+}
+
 .grid-container {
-    background-color: aqua;
     display: inline-block;
     width: 100%;
 }
 .actions {
     background-color: gray;
-    display: flex;
-}
-.menu {
-    background-color: limegreen;
     display: flex;
 }
 .message-box {
